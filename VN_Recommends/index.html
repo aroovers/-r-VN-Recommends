@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Homepage</title>
+</head>
+
+<body>
+
+	<div id="Menu" class="menu sticky">
+		<a id"OpenBtn" onclick="OpenTheMenu()">☰</a>
+	</div>
+		
+	<div id="MenuOverlay">
+		<div class="CloseBtn" onclick="CloseTheMenu()">☰
+			<ul id="myBtnContainermob">
+				<li><a class="btnmob active2" onclick="filterSelection('all')" href="#Container"> Show all</a></li>
+				<li><a class="btnmob" onclick="filterSelection('Action')" href="#Container"> Action</a></li>
+				<li><a class="btnmob" onclick="filterSelection('Comedy')" href="#Container"> Comedy</a></li>
+				<li><a class="btnmob" onclick="filterSelection('Drama')" href="#Container"> Drama</a></li>
+				<li><a class="btnmob" onclick="filterSelection('Fantasy')" href="#Container"> Fantasy</a></li>
+				<li><a class="btnmob" onclick="filterSelection('Gameplay')" href="#Container"> Gameplay</a></li>
+				<li><a class="btnmob" onclick="filterSelection('Horror')" href="#Container"> Horror</a></li>
+				<li><a class="btnmob" onclick="filterSelection('Moege')" href="#Container"> Moege</a></li>
+				<li><a class="btnmob" onclick="filterSelection('Mystery')" href="#Container"> Mystery</a></li>
+				<li><a class="btnmob" onclick="filterSelection('Otome')" href="#Container"> Otome</a></li>
+				<li><a class="btnmob" onclick="filterSelection('Romance')" href="#Container"> Romance</a></li>
+				<li><a class="btnmob" onclick="filterSelection('Scifi')" href="#Container"> Scifi</a></li>
+				<li><a class="btnmob" onclick="filterSelection('SliceOfLife')" href="#Container"> Slice of Life</a></li>
+				<li><a class="btnmob" onclick="filterSelection('Yaoi')" href="#Container"> Yaoi</a></li>
+				<li><a class="btnmob" onclick="filterSelection('Yuri')" href="#Container"> Yuri</a></li>
+			</ul>
+		</div>
+	</div>
+	
+
+	<div id="banner">
+		<div class="content">
+			<h1 class="TopMessage">/r/VN Recommends</h1>
+			<h2>A variety of recommendations for those new to Visual Novels</h2>
+		</div>
+	</div>
+
+	<div id="ScrollDown" >
+        <a href="#Container"><i class="fa fa-angle-double-down"></i></a>
+    </div>
+	
+	<div class="filter">
+		
+		<!-- Control buttons -->
+		<div id="myBtnContainer">
+			<a class="btn active" onclick="filterSelection('all')"> Show all</button>
+			<a class="btn" onclick="filterSelection('Action')"> Action</a>
+			<a class="btn" onclick="filterSelection('Comedy')"> Comedy</a>
+			<a class="btn" onclick="filterSelection('Drama')"> Drama</a>
+			<a class="btn" onclick="filterSelection('Fantasy')"> Fantasy</a>
+			<a class="btn" onclick="filterSelection('Gameplay')"> Gameplay</a>
+			<a class="btn" onclick="filterSelection('Horror')"> Horror</a>
+			<a class="btn" onclick="filterSelection('Moege')"> Moege</a>
+			<a class="btn" onclick="filterSelection('Mystery')"> Mystery</a>
+			<a class="btn" onclick="filterSelection('Otome')"> Otome</a>
+			<a class="btn" onclick="filterSelection('Romance')"> Romance</a>
+			<a class="btn" onclick="filterSelection('Scifi')"> Scifi</a>
+			<a class="btn" onclick="filterSelection('SliceOfLife')"> Slice of Life</a>
+			<a class="btn" onclick="filterSelection('Yaoi')"> Yaoi</a>
+			<a class="btn" onclick="filterSelection('Yuri')"> Yuri</a>
+		</div>
+
+		<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+		<div id="Container" class="container">
+			<div class="filterDiv Mystery">
+				<a href="pages/999.html"><img src="covers/9999.jpg" class="cover"></a>
+				<h1 class="title">9 Persons 9 Hours 9 Days</h1>
+				<p class="GenreList">Mystery, Placeholder, Placeholder, Placeholder, Etc.</p>
+				<p class="description">Nine people have been kidnapped by a mysterious person called Zero and are forced to participate in a survival game called the "Nonary Game". Each player has a bracelet ... 
+				<a href="pages/999.html">more</a>
+				</p>
+			</div>
+			
+			<div class="filterDiv Mystery Scifi SlifeOfLife">
+				<a href="pages/Chaos;Head.html"><img src="covers/Chaos;Head2.jpg" class="cover"></a>
+				<a href="pages/Chaos;Head.html"><h1 class="title">Chaos;Head</h1></a>
+				<p class="GenreList">Mystetry, Scifi, Slice of Life, Placeholder, Placeholder, Etc.</p>
+				<p class="description">Takumi is a high school student. He is withdrawn and is not interested in 3D things. In his town, a mysterious serial murder case happens and people get panicked. One day, ...
+				<a href="pages/Chaos;Head.html">more</a>
+				</p>
+			</div>
+			
+			<div class="filterDiv Comedy Drama Romance SliceOfLife">
+				<a href="pages/Clannad.html"><img src="covers/CLANNAD_Visual_Novel2.jpg" class="cover"></a>
+				<a href="pages/Clannad.html"><h1 class="title">Clannad</h1></a>
+				<p class="GenreList">Comedy, Drama, Romance, Slice of Life, Placeholder, Etc.</p>
+				<p class="description">Okazaki Tomoya is a third year high school student at Hikarizaka Private High School, leading a life full of resentment. His mother passed away in a car accident when he was ...
+				<a href="pages/Clannad.html">more</a>
+				</p>
+			</div>
+			
+			<div class="filterDiv Action Comedy">
+				<a href="pages/Fate_Stay_Night.html"><img src="covers/Fate_Stay_Night.jpg" width="10%" class="cover"></a>
+				<a href="pages/Fate_Stay_Night.html"><h1 class="title">Fate Stay Night</h1></a>
+				<p class="GenreList">Action, Comedy, Placeholder, Placeholder, Placeholder, Etc.</p>
+				<p class="description">----The one who obtains the Holy Grail will have any wish come true 
+				<br>The Holy Grail War. A great ritual that materializes the greatest holy artifact, the ... 
+				<a href="pages/Fate_Stay_Night.html">more</a>
+				</p>
+			</div>
+			
+			<div class="filterDiv Action Drama Romance">
+				<a href="pages/G-Senjou_No_Maou.html"><img src="covers/9999.jpg" class="cover"></a>
+				<a href="pages/G-Senjou_No_Maou.html"><h1 class="title">G-Senjou no Maou</h1></a>
+				<p class="GenreList">Action, Drama, Romance, Placeholder, Placeholder, Etc.</p>
+				<p class="description">You play the role of Azai Kyousuke, the son of a legendary gangster infamous in the underworld. You spend your time listening to Bach, playing God at school and covertly ...
+				<a href="pages/G-Senjou_No_Maou.html">more</a>
+				</p>
+			</div>
+			
+			<div class="filterDiv Horror Mystery">
+				<a href="pages/Higurashi_no_Naku_Koro_ni.html"><img src="covers/Higurashi_Matsuri_OST2.png" class="cover"></a>
+				<a href="pages/Higurashi_no_Naku_Koro_ni.html"><h1 class="title">Higurashi no Naku Koro ni</h1></a>
+				<p class="GenreList">Horror, Mystery, Placeholder, Placeholder, Placeholder, Etc.</p>
+				<p class="description">Higurashi no Naku Koro ni takes place during June 1983, at a fictional rural village called Hinamizawa, which has a population of approximately 2000. The main character ...
+				<a href="pages/Higurashi_no_Naku_Koro_ni.html">more</a>
+				</p>
+			</div>
+			
+			<div class="filterDiv Drama Horror Mystery Romance">
+				<a href="pages/Kara_no_Shoujo.html"><img src="covers/Kara_no_Shoujo2.jpg" class="cover"></a>
+				<a href="pages/Kara_no_Shoujo.html"><h1 class="title">Kara no Shoujo</h1></a>
+				<p class="GenreList">Drama, Horror, Mystery, Romance, Placeholder, Etc.</p>
+				<p class="description">The year is 1956; a series of bizarre murders rocks the city of Tokyo. Tokisaka Reiji, an ex-cop turned private eye, joins the investigation at the behest of his friend ...
+				<a href="pages/Kara_no_Shoujo.html">more</a>
+				</p>
+			</div>
+			
+			<div class="filterDiv Comedy Scifi Placeholder">
+				<a href="pages/Steins;Gate.html"><img src="covers/s-l16002.jpg" class="cover"></a>
+				<a href="pages/Steins;Gate.html"><h1 class="title">Steins;Gate</h1></a>
+				<p class="GenreList">Comedy, Scifi, Placeholder, Placeholder, Placeholder, Etc.</p>
+				<p class="description">"The universe has a beginning, but it has no end. —Infinite. 
+				<br>Stars, too, have their own beginnings, but are by their own power destroyed. —Finite. ...
+				<a href="pages/Steins;Gate.html">more</a>
+				</p>				
+			</div>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div class="content">
+			<h3>Copyright</h3>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

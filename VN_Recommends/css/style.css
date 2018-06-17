@@ -1,0 +1,330 @@
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  @font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  h1, h3, p, body, html{
+	  margin: 0;
+  }
+  
+@media only screen and (min-width: 250px){
+	#banner{
+		background-image: url("../images/frontpage_background.jpg");
+		height: 600px;	
+		position: relative;
+		background-size: cover;
+	}
+
+	#banner .content h1{
+		color: white;
+		position: relative;
+		text-align: center;
+		top: 200px;
+	}
+	
+	#banner .content h2{
+		color: white;
+		position: relative;
+		text-align: center;
+		font-weight: 10;
+		top: 200px;
+	}
+
+	#ScrollDown{
+        bottom: 0%;
+        left: 50%;
+        position: fixed;
+    }
+
+    #ScrollDown a{
+        text-decoration: none;
+		color: white;
+		font-size: 250%;
+	}
+	
+	/**/
+	
+	.sticky {
+        position: fixed;
+        top: 0;
+		width: 100%;
+		z-index: 2;
+    }
+
+	.menu{
+        background-color: black;
+        font-size: 140%;
+        -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+	}
+	
+	.menu a{
+		color: white;
+		cursor: pointer;
+	}
+
+	#MenuOverlay{
+		background-color: black;
+		color: white;
+		position: fixed;
+		z-index: 2;
+		width: 0;
+		height: 100%;
+		top: 0%;
+		left: 0;
+		overflow: hidden;
+		transition: 0.5s;
+		box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+	}
+	
+	#body{
+		transition: margin-left 1s;
+		padding: 50px;
+	}
+
+	.CloseBtn{
+		position: relative;
+		font-size: 140%;
+		color: white;
+		cursor: pointer;
+		border-bottom: 1px solid white;
+	}
+
+	#MenuOverlay ul{
+		list-style: none;
+		padding-left: 0;
+		text-align: center;
+	}
+	#MenuOverlay li{
+		margin-bottom: 5%;
+		font-family: "Lato";
+	}
+	/**/
+
+	.filter{
+		color: green;
+		position: relative;
+		text-align: center;
+	}
+	
+	.container {
+		overflow: hidden;
+		display: grid;
+		grid-template-columns: repeat(1, 75%);
+		justify-content: center;
+		grid-gap: 2%;
+		margin-top: 50px;
+	}
+	
+	.filterDiv {
+		float: left;
+		background-color: white;
+		color: black;
+		width: 100%;
+		text-align: center;
+		/* */
+		margin-bottom: 5%;
+		display: none; /* Hidden by default */
+		position: relative;
+		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+	}
+	
+	.title{
+		font-family: "Raleway";
+		font-size: 1.2em;
+	}
+	
+	.description{
+		margin: 10px;
+		font-family: "Lato";
+		font-size: 1em;
+		text-align: left;
+	}
+	
+	a:link{
+		text-decoration: none;
+	}
+	
+	a{
+		color: black;
+		font-weight: 700;
+	}
+	
+	.GenreList{
+		margin: 10px;
+		color: rgb(95, 58, 58);
+		font-size: 1em;
+		text-align: left;
+	}
+	
+	/* The "show" class is added to the filtered elements */
+	.show {
+		display: block;
+	}
+	
+	#myBtnContainer{
+		display: none;
+		visibility: hidden;
+		padding-top: 80px;
+	}
+
+	#myBtnContainer a{
+		background-color: transparent;
+		outline: none;
+		border: 0.5px solid grey;
+		border-radius: 2px;
+		border: 1px solid rgba(0,0,0,0.07);
+		font-family: 'Lato', sans-serif;
+		font-size: 14px;
+		line-height: 1.5;
+		font-weight: 400;
+		padding: 12px 16px;
+		/* background-color: #f1f1f1; */
+		cursor: pointer;
+		
+	}
+	
+	/* Add a light grey background on mouse-over */
+	#myBtnContainer .btn:hover{
+	  color: #baad83;
+	}
+	
+	#myBtnContainer .btn.active{
+		background-color: #baad83;
+		color: white;
+	}
+
+	/* Should be placed in the "Mobile" section */
+	/* IMPORTANT */
+	.btnmob{
+		box-shadow: none;
+		background-color: black;
+		cursor: pointer;
+		
+		border-radius: 2px;
+		color: white;
+		
+	  }
+	  
+	  /* Add a light grey background on mouse-over */
+	  .btnmob:hover {
+		background-color: white;
+		color: black;
+		opacity: 0.6;
+	  }
+	  
+	  .btnmob.active2{
+		  background-color: white;
+		  color: black;
+	  }
+	
+	.cover {
+		text-align: center;
+		height: auto;
+		width: 100%;
+	}
+
+	#footer .content h3{
+		color: white;
+		background-color: black;
+		height: 100px;
+		text-align: center;
+		margin-top: 10px;
+		position: absolute;
+		width: 100%;
+		
+	}
+}
+@media only screen and (min-width: 400px){ /* previously 600px */
+	.navigation{
+		visibility: visible;
+	}
+	
+	.container {
+		overflow: hidden;
+		display: grid;
+		grid-template-columns: repeat(2, 45%);
+		justify-content: center;
+		grid-gap: 3.33%;
+		margin-top: 50px;
+	}
+	.cover {
+		opacity: 0.6;
+		transition: opacity .55s ease-in-out;
+		-moz-transition: opacity .55s ease-in-out;
+		-webkit-transition: opacity .55s ease-in-out;
+		background-color: black;
+		text-align: center;
+		height: auto;
+		width: 100%;
+	}
+	.cover:hover {
+		opacity: 1.0;
+		transition: opacity .55s ease-in-out;
+		-moz-transition: opacity .55s ease-in-out;
+		-webkit-transition: opacity .55s ease-in-out;
+	}
+}
+
+@media only screen and (min-width: 600px){
+	.NavigationList{
+		text-align: center;
+	}
+}
+
+
+@media only screen and (min-width: 920px){
+	#Menu{
+		display: none;
+	}
+
+
+	.navigation{
+		visibility: hidden;
+	}
+	
+	#myBtnContainer{
+		display: block;
+		visibility: visible;
+	}
+
+	.container {
+		overflow: hidden;
+		display: grid;
+		grid-template-columns: repeat(3, 30%);
+		justify-content: center;
+		grid-gap: 1%;
+		margin-top: 50px;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	.container {
+		overflow: hidden;
+		display: grid;
+		grid-template-columns: repeat(4, 20%);
+		justify-content: center;
+		grid-gap: 1%;
+		margin-top: 50px;
+	}
+
+	/*
+	.filterDiv{
+		
+	}
+	*/
+}
+
+  
