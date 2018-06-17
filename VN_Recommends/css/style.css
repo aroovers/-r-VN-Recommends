@@ -87,6 +87,7 @@
 		overflow: hidden;
 		transition: 0.5s;
 		box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+		overflow: scroll;
 	}
 	
 	#body{
@@ -178,6 +179,7 @@
 		display: none;
 		visibility: hidden;
 		padding-top: 80px;
+		overflow: scroll;
 	}
 
 	#myBtnContainer a{
@@ -290,14 +292,14 @@
 		display: none;
 	}
 
-
 	.navigation{
-		visibility: hidden;
+		visibility: none;
 	}
 	
 	#myBtnContainer{
 		display: block;
 		visibility: visible;
+		overflow: visible;
 	}
 
 	.container {
